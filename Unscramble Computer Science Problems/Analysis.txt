@@ -1,0 +1,11 @@
+Task0: This has time complexity of O(1).
+
+Task1: This has time complexity of O(n).
+
+Task2: This has time complexity of O(n).
+
+Task3 PartA: This has time complexity of O(nlogn).
+
+Task3 PartB: This has time complexity of O(n).
+
+Task4: This has time complexity of O(nlogn).
