@@ -1,0 +1,11 @@
+Problem 1: Square Root of an Integer
+
+Design Reasoning:
+Here, we used binary search and checked wheather the square of mid element is equal to or less than number.
+If not, then update the start and end variables accordingly.
+
+Time Complexity:
+O(logn) as because it is done under one step.
+
+Space Complexity:
+O(1) as it storing a single value.

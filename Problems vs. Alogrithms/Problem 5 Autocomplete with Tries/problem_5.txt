@@ -1,0 +1,13 @@
+Problem 5: Autocomplete with Tries
+
+Design Reasoning:
+Here, In TrieNode, their was an inclusion of the suffixes function.
+At each recurrent call, a child node is created under root node.
+
+Time Complexity:
+O(n) - insert char all over the words
+O(n) - iterating over prefixes
+O(m x n) - iterating over suffixes loop over children and calls itself m times.
+
+Space Complexity:
+O(n) as it holds each node for each letter.

@@ -1,0 +1,11 @@
+Problem 4: Dutch National Flag Problem
+
+Design Reasoning:
+Here, My approach was to sort the array in binary search like method.
+As, first I'm working for all the 0's and pushing them towards the begining of the elements. Then, working on rest of elements.
+
+Time Complexity:
+O(n) as because a single while-loop is used for performing the sort.
+
+Space Complexity:
+O(1) as we're working on the same array.

@@ -1,0 +1,11 @@
+Problem 7: Request Routing in a Web Server with a Trie
+
+Design Reasoning:
+Here, the Route was similar to the task as working on Trie, expect that we're also working on the handler.
+Where the bonus tasks were to implement the trailing slashes and handler not found.
+
+Time Complexity:
+O(n) as because RouteTrie.insert and RouteTrie.find had to iterate over once.
+
+Space Complexity:
+O(n) as it holds numbers of different paths.

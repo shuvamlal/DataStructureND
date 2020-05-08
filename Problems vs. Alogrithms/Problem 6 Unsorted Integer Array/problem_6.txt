@@ -1,0 +1,11 @@
+Problem 6: Unsorted Integer Array
+
+Design Reasoning:
+Here, My approach was to approach the problem like initializing the min with some maximum value and max with value 0.
+And then traverse them in a loop and then find min and max values.
+
+Time Complexity:
+O(n) as because a single while-loop is used for performing the task.
+
+Space Complexity:
+O(1) as we're working on the same array.

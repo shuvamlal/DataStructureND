@@ -1,0 +1,11 @@
+Problem 2: Search in a Rotated Sorted Array
+
+Design Reasoning:
+For performing this problem, we are using binary search approach.
+First finding the pivot using binary search and then finding the target value.
+
+Time Complexity:
+O(logn) because we first find a pivot value in O(logn) and then used binary search for finding the target value.
+
+Space Complexity:
+O(1) beacuse we are storing values in variables.

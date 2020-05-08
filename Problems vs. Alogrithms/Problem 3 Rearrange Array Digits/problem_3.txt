@@ -1,0 +1,10 @@
+Problem 3: Rearrange Array Digits
+
+Design Reasoning:
+Here, I have used heap sort to first sort the array and then find the two numbers such that their sum is maximum.
+
+Time Complexity:
+O(nlogn) as because sorted() method is used for sorting the array first and under for-loop traversal, number are found.
+
+Space Complexity:
+O(1) for storing extra constant.
