@@ -1,0 +1,12 @@
+Problem 4: Active Directory
+
+Design Implementation:
+Here, I have implemented wheather some users is present in groups or not which is done 
+by implementing class.
+
+Time Complexity:
+O(n) for iterating over a for-loop and O(m) for using recursion.
+Hence, Total Time Complexity is O(m x n).
+
+Space Complexity:
+O(m x n) for storing stacks.

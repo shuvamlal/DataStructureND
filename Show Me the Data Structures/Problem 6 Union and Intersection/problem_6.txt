@@ -1,0 +1,11 @@
+Problem 6: Union and Intersection
+
+Design Implementation:
+Here, two LinkedList are created such that we have to find wheather their union and intersections exists or not.
+For unions we just removed the duplicates and for intersections, only took the common elements presents in both the lists.
+
+Time Complexity:
+O(m+n) for iterating over the loop of two different lists.
+
+Space Complexity:
+O(n) for storing list.

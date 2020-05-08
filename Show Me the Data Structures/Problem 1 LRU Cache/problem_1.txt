@@ -1,0 +1,11 @@
+Problem 1: LRU Cache
+
+Design Implementation:
+Here, I implemented this task using enque and deque functions on LinkedList. The elements are stored in the 
+LinkedList and opearted through the functions.
+
+Time Complexity:
+O(1) for using extra constants.
+
+Space Complexity:
+O(n) for storing list.

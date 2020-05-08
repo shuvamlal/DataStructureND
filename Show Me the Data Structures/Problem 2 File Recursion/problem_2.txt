@@ -1,0 +1,13 @@
+Problem 2: File Recursion
+
+Design Implementation:
+Here, I have used os module library for lookups into the directories of testdir folder.
+And from that, I have used recursion for finding files ending with ".c".
+
+Time Complexity:
+O(n) for iterating file in os.listdir(temp)
+O(m) for performing recursion
+Hence, total time complexity is O(m x n).
+
+Space Complexity:
+O(n) for storing data in files.

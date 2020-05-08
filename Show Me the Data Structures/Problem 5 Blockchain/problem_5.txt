@@ -1,0 +1,10 @@
+Problem 5: Blockchain
+
+Design Implementation:
+Here, I made blocks using DoublyLinkedLists such that each the last node of block is linked with it's previous node.
+
+Time Complexity:
+O(1) for performing the tasks.
+
+Space Complexity:
+O(n) for storing the blocks data.

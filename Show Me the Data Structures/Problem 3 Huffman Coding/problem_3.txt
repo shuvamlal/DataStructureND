@@ -1,0 +1,15 @@
+Problem 3: Huffman Coding
+
+Design Implementation:
+Here, I first took a text and encoded it using huffman encoding and then decoded it back to the original text.
+
+Time Complexity:
+O(nlogn) for using sorted() method and O(n) for iterating a for-loop in huffman encoding.
+So, O(nlogn) for huffman encoding.
+
+O(n) for iterating two for-loops in huffman decoding.
+
+Hence, total time complexity is O(nlogn).
+
+Space Complexity:
+O(n) for storing the list.
