@@ -25,11 +25,17 @@ Print a message:
 The list of numbers should be print out one per line in lexicographic order with no duplicates.
 """
 
-ls = set()
-for i in calls:
-    if i[0][:3] == '140':
-        if i[0] != i[1] and i[0] not in [i[0] for i in texts] and i[0] not in [i[1] for i in texts]:
-            ls.add(i[0])
-print("These numbers could be telemarketers: ")
-for number in sorted(ls):
+numbers = set()
+for call in calls:
+    numbers.add(call[0])
+
+for call in calls:
+    numbers.discard(call[1])
+    
+for text in texts:
+    numbers.discard(text[0])
+    numbers.discard(text[1])
+    
+print("These numbers could be telemarketers:")
+for number in sorted(numbers):
     print(number)

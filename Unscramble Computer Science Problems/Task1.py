@@ -19,19 +19,13 @@ Print a message:
 "There are <count> different telephone numbers in the records."
 """
 
-texts_numbers = []
-for i in texts:
-    texts_numbers.append(i[0])
-    texts_numbers.append(i[1])
-print("There are {} different telephone numbers in the record of texts.".format(len(texts_numbers)))
-calls_numbers = []
-for i in calls:
-    calls_numbers.append(i[0])
-    calls_numbers.append(i[1])
-print("There are {} different telephone numbers in the record of calls.".format(len(calls_numbers)))
+numbers = set()
+for record in texts:
+    numbers.add(record[0])
+    numbers.add(record[1])
 
-temp = []
-for i in texts_numbers:
-    if i in calls_numbers:
-        temp.append(i)
-print("There are {} different telephone numbers in the records.".format(len(temp)))
+for record in calls:
+    numbers.add(record[0])
+    numbers.add(record[1])
+
+print("There are {} different telephone numbers in the records.".format(len(numbers)))

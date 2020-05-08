@@ -1,11 +1,31 @@
-Task0: This has time complexity of O(1).
+Task0: 
+This has time complexity of O(1).
+As in this task it permforms two operations. That's why it has worst Time Complexity of O(1).
 
-Task1: This has time complexity of O(n).
+Task1: 
+This has time complexity of O(n).
+In this task, we iterate over a for-loop twice each for calls and texts, 
+which gives worst Time Complexity O(n).
 
-Task2: This has time complexity of O(n).
+Task2: 
+This has time complexity of O(n).
+In this task, we iterate over a for-loop for calls which has worst Time Complexity of O(n).
+Also, we iterate for-loop one more time, which also has worst Time Complexity of O(n).
+Hence, Task2 has worst Time Complexity of O(n).
 
-Task3 PartA: This has time complexity of O(nlogn).
+Task3 
+PartA: 
+This has time complexity of O(nlogn).
+Since, like above steps, here also we had iterate for-loop 
+but at last used sorted() method which has time complexity of nlogn.
 
-Task3 PartB: This has time complexity of O(n).
+PartB: 
+This has time complexity of O(n).
+Here, we just iterated through a single for-loop which makes it O(n).
 
-Task4: This has time complexity of O(nlogn).
+Hence, Task3 has worst Time Complexity of O(nlogn).
+
+Task4: 
+This has time complexity of O(nlogn).
+Since, like above steps, here also we had iterate for-loop 
+but at last used sorted() method which has worst time complexity of nlogn.

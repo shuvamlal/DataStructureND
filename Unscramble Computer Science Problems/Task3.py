@@ -43,23 +43,22 @@ Print the answer as a part of a message::
 to other fixed lines in Bangalore."
 The percentage should have 2 decimal digits
 """
-
-print("Part A:".center(120))
+# part A
 numbers = set()
-for i in calls:
-    if i[0][:3]=='140':
-        numbers.add(i[0][:3])
-    elif i[0][0]!='(':
-        numbers.add(i[0].split()[0])
-    else:
-        numbers.add(i[0].strip('(').split(')')[0])
-codes = sorted(numbers)
-
+for call in calls:
+    if call[0].startswith("(080)"):
+        if call[1].startswith("("):
+            numbers.add(call[1][1:call[1].find(')')])
+        elif call[1].find(' '):
+            numbers.add(call[1][:4])
+        elif call[1].startswith("140"):
+            numbers.add(call[1][:3])
+            
 print("The numbers called by people in Bangalore have codes:")
-for code in codes:
-    print(code)
+for number in sorted(numbers):
+    print(number)
     
-print("Part B:".center(120))
+# part B
 c, s =0, 0
 for i in calls:
     if i[0].strip('(').split(')')[0] == '080':

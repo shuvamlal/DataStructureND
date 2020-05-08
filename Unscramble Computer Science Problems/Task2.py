@@ -19,11 +19,18 @@ Print a message:
 "<telephone number> spent the longest time, <total time> seconds, on the phone during 
 September 2016.".
 """
+from collections import defaultdict
 
-max=0
-res = []
-for i in calls:
-    if max<int(i[3]):
-        max=int(i[3])
-        res = i
-print("{} spent the longest time, {} seconds, on the phone during September 2016.".format(res[0], res[3]))
+call_log = defaultdict(int)
+for num in calls:
+    call_log[num[0]] += int(num[3])                # adding from the senders side
+        
+    call_log[num[1]] += int(num[3])                # adding from the receivers side
+
+max_val=0  
+temp_key=0
+for key, val in call_log.items():
+    if max_val<val:
+        max_val=val
+        temp_key = key
+print("{} spent the longest time, {} seconds, on the phone during September 2016.".format(temp_key, max_val))
